@@ -1,11 +1,11 @@
 <?php
-$host = getenv("DB_HOST");
-$user = getenv("DB_USER");
-$password = getenv("DB_PASSWORD");
-$dbname = getenv("DB_NAME");
+// login.php
+$servername = "localhost";
+$dbusername = "root";
+$dbpassword = "";
+$dbname = "project"; // Your database name
 
-// Create connection
-$conn = new mysqli($host, $user, $password, $dbname);
+$conn = new mysqli($servername, $dbusername, $dbpassword, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
