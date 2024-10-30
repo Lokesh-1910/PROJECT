@@ -1,5 +1,4 @@
 <?php
-// register.php
 $servername = "localhost";
 $dbusername = "root";
 $dbpassword = "";
